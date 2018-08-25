@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import sys
 from gnuradio import gr
 from gnuradio import audio
 from gnuradio.eng_option import eng_option
