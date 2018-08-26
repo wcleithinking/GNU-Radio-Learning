@@ -22,6 +22,7 @@
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import howto_swig as howto
+from square3_ff import square3_ff
 
 class qa_square_ff (gr_unittest.TestCase):
 
@@ -31,12 +32,26 @@ class qa_square_ff (gr_unittest.TestCase):
     def tearDown (self):
         self.tb = None
 
-    def test_001_square_ff (self):
+    # def test_001_square_ff (self):
+    #     # set up fg
+    #     src_data = (-3,4,-5.5,2,3)
+    #     expected_result = (9,16,30.25,4,9)
+    #     src = blocks.vector_source_f(src_data)
+    #     sqr = howto.square_ff()
+    #     dst = blocks.vector_sink_f()
+    #     self.tb.connect(src,sqr)
+    #     self.tb.connect(sqr,dst)
+    #     self.tb.run ()
+    #     # check data
+    #     result_data = dst.data()
+    #     self.assertFloatTuplesAlmostEqual(expected_result,result_data,6)
+
+    def test_002_square2_ff (self):
         # set up fg
         src_data = (-3,4,-5.5,2,3)
         expected_result = (9,16,30.25,4,9)
         src = blocks.vector_source_f(src_data)
-        sqr = howto.square_ff()
+        sqr = howto.square2_ff()
         dst = blocks.vector_sink_f()
         self.tb.connect(src,sqr)
         self.tb.connect(sqr,dst)
@@ -45,12 +60,11 @@ class qa_square_ff (gr_unittest.TestCase):
         result_data = dst.data()
         self.assertFloatTuplesAlmostEqual(expected_result,result_data,6)
 
-    def test_002_square2_ff (self):
-        # set up fg
+    def test_003_square3_ff (self):
         src_data = (-3,4,-5.5,2,3)
         expected_result = (9,16,30.25,4,9)
         src = blocks.vector_source_f(src_data)
-        sqr = howto.square2_ff()
+        sqr = square3_ff()
         dst = blocks.vector_sink_f()
         self.tb.connect(src,sqr)
         self.tb.connect(sqr,dst)

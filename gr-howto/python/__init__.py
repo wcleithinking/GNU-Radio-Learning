@@ -31,4 +31,5 @@ except ImportError:
 	pass
 
 # import any pure python here
+from square3_ff import square3_ff
 #

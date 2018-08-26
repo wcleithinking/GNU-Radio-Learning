@@ -35,12 +35,12 @@
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/swig/CMakeFiles/install/local.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/swig/CMakeFiles/test.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/install/strip.dir
-/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/list_install_components.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/install/local.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/test.dir
-/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/pygen_python_48294.dir
-/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/rebuild_cache.dir
+/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/list_install_components.dir
+/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/pygen_python_c1a25.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/edit_cache.dir
+/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/rebuild_cache.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/CMakeFiles/install.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/grc/CMakeFiles/install/strip.dir
 /home/wenchao/GitHub/gnuradio_files/gr-howto/build/grc/CMakeFiles/edit_cache.dir

@@ -14,8 +14,12 @@
 /usr/local/include/howto/howto/swig/howto_swig.i
 /usr/local/include/howto/howto/swig/howto_swig_doc.i
 /usr/local/lib/python2.7/dist-packages/howto/__init__.py
+/usr/local/lib/python2.7/dist-packages/howto/square3_ff.py
 /usr/local/lib/python2.7/dist-packages/howto/__init__.pyc
+/usr/local/lib/python2.7/dist-packages/howto/square3_ff.pyc
 /usr/local/lib/python2.7/dist-packages/howto/__init__.pyo
+/usr/local/lib/python2.7/dist-packages/howto/square3_ff.pyo
 /usr/local/share/gnuradio/grc/blocks/howto_square_ff.xml
 /usr/local/share/gnuradio/grc/blocks/howto_square2_ff.xml
 /usr/local/share/gnuradio/grc/blocks/howto_square2_ff.xml
+/usr/local/share/gnuradio/grc/blocks/howto_square3_ff.xml

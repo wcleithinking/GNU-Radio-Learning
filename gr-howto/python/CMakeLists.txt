@@ -31,7 +31,7 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    DESTINATION ${GR_PYTHON_DIR}/howto
+    square3_ff.py DESTINATION ${GR_PYTHON_DIR}/howto
 )
 
 ########################################################################
