@@ -41,6 +41,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/howto" TYPE FILE FILES
     "/home/wenchao/GitHub/gnuradio_files/gr-howto/include/howto/api.h"
     "/home/wenchao/GitHub/gnuradio_files/gr-howto/include/howto/square_ff.h"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/include/howto/square2_ff.h"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/include/howto/square2_ff.h"
     )
 endif()
 

@@ -27,6 +27,8 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND howto_sources
     square_ff_impl.cc
+    square2_ff_impl.cc
+    square2_ff_impl.cc
 )
 
 set(howto_sources "${howto_sources}" PARENT_SCOPE)

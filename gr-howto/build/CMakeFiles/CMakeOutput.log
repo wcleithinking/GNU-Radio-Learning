@@ -633,3 +633,88 @@ make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/C
     Feature record: C_FEATURE:0c_restrict
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57b7a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57b7a.dir/build.make CMakeFiles/cmTC_57b7a.dir/build
+make[1]: Entering directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57b7a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_57b7a.dir/CheckIncludeFile.c.o   -c /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_57b7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57b7a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_57b7a.dir/CheckIncludeFile.c.o  -o cmTC_57b7a 
+make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eee85/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eee85.dir/build.make CMakeFiles/cmTC_eee85.dir/build
+make[1]: Entering directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eee85.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_eee85.dir/CheckIncludeFile.c.o   -c /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_eee85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eee85.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_eee85.dir/CheckIncludeFile.c.o  -o cmTC_eee85 
+make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b8d48/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8d48.dir/build.make CMakeFiles/cmTC_b8d48.dir/build
+make[1]: Entering directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8d48.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b8d48.dir/CheckIncludeFile.c.o   -c /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b8d48
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8d48.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b8d48.dir/CheckIncludeFile.c.o  -o cmTC_b8d48 
+make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7dad0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7dad0.dir/build.make CMakeFiles/cmTC_7dad0.dir/build
+make[1]: Entering directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7dad0.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7dad0.dir/SIZEOF_SIZE_T.c.o   -c /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_7dad0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7dad0.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7dad0.dir/SIZEOF_SIZE_T.c.o  -o cmTC_7dad0 
+make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb863/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb863.dir/build.make CMakeFiles/cmTC_eb863.dir/build
+make[1]: Entering directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb863.dir/SIZEOF_UINT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_eb863.dir/SIZEOF_UINT.c.o   -c /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT.c
+Linking C executable cmTC_eb863
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb863.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_eb863.dir/SIZEOF_UINT.c.o  -o cmTC_eb863 
+make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAVE_WNO_UNUSED_BUT_SET_VARIABLE succeeded with the following output:
+Change Dir: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_05df9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_05df9.dir/build.make CMakeFiles/cmTC_05df9.dir/build
+make[1]: Entering directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_05df9.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_05df9.dir/src.cxx.o -c /home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_05df9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05df9.dir/link.txt --verbose=1
+/usr/bin/c++   -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE    -rdynamic CMakeFiles/cmTC_05df9.dir/src.cxx.o  -o cmTC_05df9 
+make[1]: Leaving directory '/home/wenchao/GitHub/gnuradio_files/gr-howto/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

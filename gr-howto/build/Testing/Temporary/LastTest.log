@@ -1,22 +1,62 @@
-Start testing: Aug 26 11:09 CST
+Start testing: Aug 26 16:42 CST
 ----------------------------------------------------------
-2/2 Testing: qa_square_ff
-2/2 Test: qa_square_ff
+1/3 Testing: test_howto
+1/3 Test: test_howto
+Command: "/bin/sh" "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/lib/test_howto_test.sh"
+Directory: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/lib
+"test_howto" start time: Aug 26 16:42 CST
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_howto" end time: Aug 26 16:42 CST
+"test_howto" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: qa_square_ff
+2/3 Test: qa_square_ff
 Command: "/bin/sh" "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/qa_square_ff_test.sh"
 Directory: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python
-"qa_square_ff" start time: Aug 26 11:09 CST
+"qa_square_ff" start time: Aug 26 16:42 CST
 Output:
 ----------------------------------------------------------
 Traceback (most recent call last):
   File "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/qa_square_ff.py", line 24, in <module>
-    import tutorial_swig as tutorial
-ImportError: No module named tutorial_swig
+    import howto_swig as howto
+  File "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/swig/howto_swig.py", line 837, in <module>
+    square2_ff = square2_ff.make;
+AttributeError: 'function' object has no attribute 'make'
 <end of output>
-Test time =   0.31 sec
+Test time =   0.28 sec
 ----------------------------------------------------------
 Test Failed.
-"qa_square_ff" end time: Aug 26 11:09 CST
+"qa_square_ff" end time: Aug 26 16:42 CST
 "qa_square_ff" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 26 11:09 CST
+3/3 Testing: qa_square2_ff
+3/3 Test: qa_square2_ff
+Command: "/bin/sh" "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/qa_square2_ff_test.sh"
+Directory: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python
+"qa_square2_ff" start time: Aug 26 16:42 CST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/qa_square2_ff.py", line 24, in <module>
+    import howto_swig as howto
+  File "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/swig/howto_swig.py", line 837, in <module>
+    square2_ff = square2_ff.make;
+AttributeError: 'function' object has no attribute 'make'
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Failed.
+"qa_square2_ff" end time: Aug 26 16:42 CST
+"qa_square2_ff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 26 16:42 CST

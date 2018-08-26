@@ -38,6 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/wenchao/GitHub/gnuradio_files/gr-howto/grc/howto_square_ff.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/grc/howto_square_ff.xml"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/grc/howto_square2_ff.xml"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/grc/howto_square2_ff.xml"
+    )
 endif()
 
