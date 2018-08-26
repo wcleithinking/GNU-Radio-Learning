@@ -1,0 +1,22 @@
+Start testing: Aug 26 11:09 CST
+----------------------------------------------------------
+2/2 Testing: qa_square_ff
+2/2 Test: qa_square_ff
+Command: "/bin/sh" "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/qa_square_ff_test.sh"
+Directory: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python
+"qa_square_ff" start time: Aug 26 11:09 CST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/qa_square_ff.py", line 24, in <module>
+    import tutorial_swig as tutorial
+ImportError: No module named tutorial_swig
+<end of output>
+Test time =   0.31 sec
+----------------------------------------------------------
+Test Failed.
+"qa_square_ff" end time: Aug 26 11:09 CST
+"qa_square_ff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 26 11:09 CST
