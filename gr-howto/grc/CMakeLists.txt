@@ -18,5 +18,8 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    howto_square_ff.xml DESTINATION share/gnuradio/grc/blocks
+    howto_square_ff.xml
+    howto_square2_ff.xml
+    howto_square2_ff.xml
+    howto_square3_ff.xml DESTINATION share/gnuradio/grc/blocks
 )

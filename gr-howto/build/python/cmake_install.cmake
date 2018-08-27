@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,13 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/__init__.py"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/square3_ff.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
     "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/__init__.pyc"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/square3_ff.pyc"
     "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/__init__.pyo"
+    "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/square3_ff.pyo"
     )
 endif()
 

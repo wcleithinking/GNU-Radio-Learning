@@ -45,10 +45,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.10/Modules/CheckCXXCompilerFlag.cmake"
   "/usr/share/cmake-3.10/Modules/CheckCXXSourceCompiles.cmake"
+<<<<<<< HEAD
   "/usr/share/cmake-3.10/Modules/CheckIncludeFile.c.in"
   "/usr/share/cmake-3.10/Modules/CheckIncludeFile.cmake"
   "/usr/share/cmake-3.10/Modules/CheckIncludeFileCXX.cmake"
   "/usr/share/cmake-3.10/Modules/CheckTypeSize.c.in"
+=======
+  "/usr/share/cmake-3.10/Modules/CheckIncludeFile.cmake"
+  "/usr/share/cmake-3.10/Modules/CheckIncludeFileCXX.cmake"
+>>>>>>> 0c943cd40c30f3a81eeeb790665ee57e7027c151
   "/usr/share/cmake-3.10/Modules/CheckTypeSize.cmake"
   "/usr/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.10/Modules/Compiler/GNU-C.cmake"
@@ -98,6 +103,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "swig/CMakeFiles/howto_swig_swig_doc.dir/DependInfo.cmake"
   "swig/CMakeFiles/_howto_swig.dir/DependInfo.cmake"
   "swig/CMakeFiles/pygen_swig_9a593.dir/DependInfo.cmake"
+<<<<<<< HEAD
   "python/CMakeFiles/pygen_python_48294.dir/DependInfo.cmake"
+=======
+  "python/CMakeFiles/pygen_python_c1a25.dir/DependInfo.cmake"
+>>>>>>> 0c943cd40c30f3a81eeeb790665ee57e7027c151
   "apps/CMakeFiles/pygen_apps_9a6dd.dir/DependInfo.cmake"
   )
