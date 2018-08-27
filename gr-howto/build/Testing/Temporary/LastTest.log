@@ -1,22 +1,40 @@
-Start testing: Aug 26 11:09 CST
+Start testing: Aug 27 10:21 CST
 ----------------------------------------------------------
+1/2 Testing: test_howto
+1/2 Test: test_howto
+Command: "/bin/sh" "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/lib/test_howto_test.sh"
+Directory: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/lib
+"test_howto" start time: Aug 27 10:21 CST
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_howto" end time: Aug 27 10:21 CST
+"test_howto" time elapsed: 00:00:00
+----------------------------------------------------------
+
 2/2 Testing: qa_square_ff
 2/2 Test: qa_square_ff
 Command: "/bin/sh" "/home/wenchao/GitHub/gnuradio_files/gr-howto/build/python/qa_square_ff_test.sh"
 Directory: /home/wenchao/GitHub/gnuradio_files/gr-howto/build/python
-"qa_square_ff" start time: Aug 26 11:09 CST
+"qa_square_ff" start time: Aug 27 10:21 CST
 Output:
 ----------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/wenchao/GitHub/gnuradio_files/gr-howto/python/qa_square_ff.py", line 24, in <module>
-    import tutorial_swig as tutorial
-ImportError: No module named tutorial_swig
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
 <end of output>
-Test time =   0.31 sec
+Test time =   0.29 sec
 ----------------------------------------------------------
-Test Failed.
-"qa_square_ff" end time: Aug 26 11:09 CST
+Test Passed.
+"qa_square_ff" end time: Aug 27 10:21 CST
 "qa_square_ff" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 26 11:09 CST
+End testing: Aug 27 10:21 CST

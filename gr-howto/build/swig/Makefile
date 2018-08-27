@@ -68,16 +68,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -89,16 +90,27 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -112,28 +124,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -167,6 +167,162 @@ depend:
 	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+swig/CMakeFiles/_howto_swig_swig_tag.dir/rule:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_howto_swig_swig_tag.dir/rule
+.PHONY : swig/CMakeFiles/_howto_swig_swig_tag.dir/rule
+
+# Convenience name for target.
+_howto_swig_swig_tag: swig/CMakeFiles/_howto_swig_swig_tag.dir/rule
+
+.PHONY : _howto_swig_swig_tag
+
+# fast build rule for target.
+_howto_swig_swig_tag/fast:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig_swig_tag.dir/build.make swig/CMakeFiles/_howto_swig_swig_tag.dir/build
+.PHONY : _howto_swig_swig_tag/fast
+
+# Convenience name for target.
+swig/CMakeFiles/howto_swig_swig_2d0df.dir/rule:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/howto_swig_swig_2d0df.dir/rule
+.PHONY : swig/CMakeFiles/howto_swig_swig_2d0df.dir/rule
+
+# Convenience name for target.
+howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/rule
+
+.PHONY : howto_swig_swig_2d0df
+
+# fast build rule for target.
+howto_swig_swig_2d0df/fast:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make swig/CMakeFiles/howto_swig_swig_2d0df.dir/build
+.PHONY : howto_swig_swig_2d0df/fast
+
+# Convenience name for target.
+swig/CMakeFiles/howto_swig_swig_doc.dir/rule:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/howto_swig_swig_doc.dir/rule
+.PHONY : swig/CMakeFiles/howto_swig_swig_doc.dir/rule
+
+# Convenience name for target.
+howto_swig_swig_doc: swig/CMakeFiles/howto_swig_swig_doc.dir/rule
+
+.PHONY : howto_swig_swig_doc
+
+# fast build rule for target.
+howto_swig_swig_doc/fast:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/howto_swig_swig_doc.dir/build.make swig/CMakeFiles/howto_swig_swig_doc.dir/build
+.PHONY : howto_swig_swig_doc/fast
+
+# Convenience name for target.
+swig/CMakeFiles/_howto_swig.dir/rule:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_howto_swig.dir/rule
+.PHONY : swig/CMakeFiles/_howto_swig.dir/rule
+
+# Convenience name for target.
+_howto_swig: swig/CMakeFiles/_howto_swig.dir/rule
+
+.PHONY : _howto_swig
+
+# fast build rule for target.
+_howto_swig/fast:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/build
+.PHONY : _howto_swig/fast
+
+# Convenience name for target.
+swig/CMakeFiles/pygen_swig_9a593.dir/rule:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_9a593.dir/rule
+.PHONY : swig/CMakeFiles/pygen_swig_9a593.dir/rule
+
+# Convenience name for target.
+pygen_swig_9a593: swig/CMakeFiles/pygen_swig_9a593.dir/rule
+
+.PHONY : pygen_swig_9a593
+
+# fast build rule for target.
+pygen_swig_9a593/fast:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/pygen_swig_9a593.dir/build.make swig/CMakeFiles/pygen_swig_9a593.dir/build
+.PHONY : pygen_swig_9a593/fast
+
+_howto_swig_swig_tag.o: _howto_swig_swig_tag.cpp.o
+
+.PHONY : _howto_swig_swig_tag.o
+
+# target to build an object file
+_howto_swig_swig_tag.cpp.o:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig_swig_tag.dir/build.make swig/CMakeFiles/_howto_swig_swig_tag.dir/_howto_swig_swig_tag.cpp.o
+.PHONY : _howto_swig_swig_tag.cpp.o
+
+_howto_swig_swig_tag.i: _howto_swig_swig_tag.cpp.i
+
+.PHONY : _howto_swig_swig_tag.i
+
+# target to preprocess a source file
+_howto_swig_swig_tag.cpp.i:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig_swig_tag.dir/build.make swig/CMakeFiles/_howto_swig_swig_tag.dir/_howto_swig_swig_tag.cpp.i
+.PHONY : _howto_swig_swig_tag.cpp.i
+
+_howto_swig_swig_tag.s: _howto_swig_swig_tag.cpp.s
+
+.PHONY : _howto_swig_swig_tag.s
+
+# target to generate assembly for a file
+_howto_swig_swig_tag.cpp.s:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig_swig_tag.dir/build.make swig/CMakeFiles/_howto_swig_swig_tag.dir/_howto_swig_swig_tag.cpp.s
+.PHONY : _howto_swig_swig_tag.cpp.s
+
+howto_swigPYTHON_wrap.o: howto_swigPYTHON_wrap.cxx.o
+
+.PHONY : howto_swigPYTHON_wrap.o
+
+# target to build an object file
+howto_swigPYTHON_wrap.cxx.o:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.o
+.PHONY : howto_swigPYTHON_wrap.cxx.o
+
+howto_swigPYTHON_wrap.i: howto_swigPYTHON_wrap.cxx.i
+
+.PHONY : howto_swigPYTHON_wrap.i
+
+# target to preprocess a source file
+howto_swigPYTHON_wrap.cxx.i:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.i
+.PHONY : howto_swigPYTHON_wrap.cxx.i
+
+howto_swigPYTHON_wrap.s: howto_swigPYTHON_wrap.cxx.s
+
+.PHONY : howto_swigPYTHON_wrap.s
+
+# target to generate assembly for a file
+howto_swigPYTHON_wrap.cxx.s:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.s
+.PHONY : howto_swigPYTHON_wrap.cxx.s
+
+howto_swig_swig_2d0df.o: howto_swig_swig_2d0df.cpp.o
+
+.PHONY : howto_swig_swig_2d0df.o
+
+# target to build an object file
+howto_swig_swig_2d0df.cpp.o:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o
+.PHONY : howto_swig_swig_2d0df.cpp.o
+
+howto_swig_swig_2d0df.i: howto_swig_swig_2d0df.cpp.i
+
+.PHONY : howto_swig_swig_2d0df.i
+
+# target to preprocess a source file
+howto_swig_swig_2d0df.cpp.i:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.i
+.PHONY : howto_swig_swig_2d0df.cpp.i
+
+howto_swig_swig_2d0df.s: howto_swig_swig_2d0df.cpp.s
+
+.PHONY : howto_swig_swig_2d0df.s
+
+# target to generate assembly for a file
+howto_swig_swig_2d0df.cpp.s:
+	cd /home/wenchao/GitHub/gnuradio_files/gr-howto/build && $(MAKE) -f swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.s
+.PHONY : howto_swig_swig_2d0df.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,12 +330,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... edit_cache"
-	@echo "... list_install_components"
-	@echo "... test"
-	@echo "... install/local"
-	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... _howto_swig_swig_tag"
+	@echo "... howto_swig_swig_2d0df"
+	@echo "... howto_swig_swig_doc"
+	@echo "... _howto_swig"
+	@echo "... pygen_swig_9a593"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... _howto_swig_swig_tag.o"
+	@echo "... _howto_swig_swig_tag.i"
+	@echo "... _howto_swig_swig_tag.s"
+	@echo "... howto_swigPYTHON_wrap.o"
+	@echo "... howto_swigPYTHON_wrap.i"
+	@echo "... howto_swigPYTHON_wrap.s"
+	@echo "... howto_swig_swig_2d0df.o"
+	@echo "... howto_swig_swig_2d0df.i"
+	@echo "... howto_swig_swig_2d0df.s"
 .PHONY : help
 
 
