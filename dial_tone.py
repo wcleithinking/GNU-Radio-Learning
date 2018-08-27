@@ -18,8 +18,10 @@ class my_top_block(gr.top_block):
         gr.top_block.__init__(self)
 
         parser = OptionParser(option_class=eng_option)  # option parser
-        parser.add_option("-O","--audio-output",type="string",default="",help="pcm output device name. E.g., hw:0,0 or /dev/dsp")   # add option
-        parser.add_option("-r","--sample-rate",type="eng_float",default=48000,help="set sample rate to RATE (48000)")   # add option
+        parser.add_option("-O","--audio-output",type="string",default="",\
+                    help="pcm output device name. E.g., hw:0,0 or /dev/dsp")   # add option
+        parser.add_option("-r","--sample-rate",type="eng_float",default=48000,\
+                    help="set sample rate to RATE (48000)")   # add option
         (options,args) = parser.parse_args()    # get the options
         if len(args) != 0:
             parser.print_help()
